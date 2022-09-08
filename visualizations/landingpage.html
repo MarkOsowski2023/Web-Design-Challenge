@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Osowski Web Design Challenge</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- top -->
+    <div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Web Challenge</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar items unordered list -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class='nav-link' href="#">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Visualizations
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Max Temperature</a>
+                    <a class="dropdown-item" href="#">Cloudines</a>
+                    <a class="dropdown-item" href="#">Wind Speed</a>
+                    <a class="dropdown-item" href="#">Humidity</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+    </div>
+
+    <!-- Container for Summary and plots -->
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <!-- summary column -->
+            <div class="col col-12 col-md-8 divby">
+                <br>
+                <h1>SUMMARY</h1>
+                <hr>
+                <img src="../assets/images/Fig1.png" alt="Latitude Vs. Temp" width="250" align="'left">
+                <p>
+                    For this project we analyzed weather patterns versus a cities distance from the equator.
+                    We gathered the data from OpenWeatherMap API and created a dataframe with over 500 random cities.
+                </p>
+                <p>
+                    We used Matplotlib to plot different Weather Patterns vs. latitude: Max Temperature, Cloudines, Wind Speed, and Humidity.
+                    The Data we used and the Visualizations we created can be viewed here on this website.
+                </p>
+                <hr>
+            </div>
+            <!-- plot column -->
+            <div class="col col12 col-md-4 divby">
+                <br>
+                <h2>Plots</h2>
+                <hr>
+                <!-- columns for the plots inside the plot column -->
+                <div class="row">
+                    <div class="col col-3 col-md-6">
+                        <a href="#"><img src="../assets/images/Fig1.png" alt="temp"></a>
+                    </div>
+                    <div class="col col-3 col-md-6">
+                        <a href="#"><img src="../assets/images/Fig2.png" alt="fig2"></a>
+                    </div>
+                    <div class="col col-3 col-md-6">
+                        <a href="#"><img src="../assets/images/Fig3.png" alt="Fig3"></a>
+                    </div>
+                    <div class="col col-3 col-md-6">
+                        <a href="#"><img src="../assets/images/Fig4.png" alt="Fig4"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
